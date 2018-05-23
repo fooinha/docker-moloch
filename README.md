@@ -7,7 +7,6 @@ docker build --tag moloch:latest .
 
 docker run -t --net bridge --privileged -p 3128:3128 -p 8005:8005 --name moloch-demo moloch:latest
 
-docker start moloch-demo
 ```
 
 Includes a Squid proxy cache service at port 3218.
