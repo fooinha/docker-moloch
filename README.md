@@ -2,8 +2,6 @@
 Docker for moloch demo  - local elasticsearch
 
 
-
-
 ```
 docker build --tag moloch:latest .
 
@@ -17,3 +15,9 @@ Includes a Squid proxy cache service at port 3218.
 Configure your proxy to localhost:3128
 
 Go to http://localhost:8005 and see information about packets, flows and sessions in moloch's ui.
+
+
+To finish docker container, run:
+```
+docker stop moloch-demo
+````
