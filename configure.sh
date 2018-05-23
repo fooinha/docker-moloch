@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if -z "${MOLOCH_LOCALELASTICSEARCH}"
+then
+    MOLOCH_LOCALELASTICSEARCH="no"
+fi
+
+
+./bin/Configure << EOF
+${MOLOCH_LOCALELASTICSEARCH}
+EOF

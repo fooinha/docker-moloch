@@ -1,0 +1,9 @@
+[Unit]
+Description=Moloch bootstrap service
+After=elasticsearch.service
+
+[Service]
+ExecStart=/data/moloch/bin/moloch-bootstrap.sh
+
+[Install]
+WantedBy=multi-user.target
