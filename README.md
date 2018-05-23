@@ -1,5 +1,5 @@
 # docker-moloch
-Docker for moloch demo  - local elasticsearch
+Docker for moloch demo - local elasticsearch
 
 
 ```
@@ -19,4 +19,4 @@ Go to http://localhost:8005 and see information about packets, flows and session
 To finish docker container, run:
 ```
 docker stop moloch-demo
-````
+```

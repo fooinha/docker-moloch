@@ -46,7 +46,7 @@ RUN cat etc/packet-drop-ips.ini >> etc/config.ini
 COPY moloch-bootstrap.sh bin/.
 RUN chmod +x bin/moloch-bootstrap.sh
 COPY moloch-bootstrap.service /etc/systemd/system/.
-RUN	systemctl enable elasticsearch.service
+RUN systemctl enable elasticsearch.service
 RUN systemctl enable moloch-bootstrap.service
 
 RUN echo "export MOLOCH_LOCALELASTICSEARCH=${MOLOCH_LOCALELASTICSEARCH}" >> /etc/profile
